@@ -1,0 +1,58 @@
+<!--Lela J. Sanchez CSC102 Assignment 2.1: The Building Blocks for Javascript - Functions-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="w2 stylesheet" href="w2-stylesheet.css"><!--Link to CSS style-sheet-->
+    <script src="w2-script.js"></script> <!--Link to JavaScript sheet-->
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Rock, Paper, Scissors - The Game
+        </h1>
+
+        <h2> Make your choice...</h2> <!--Game instructions in h2-->
+        <div class="choices"> <!--Buttons for player choices-->
+            <button onclick="showChoiceModel('rock')">Rock</button>
+            <button onclick="showChoiceModel('paper')">Paper</button>
+            <button onclick="showChoiceModel('scissors')">Scissors</button>
+        </div>
+        <p id="result">
+            <!--Empty to print result using JavaScript-->
+        </p>
+    </div>
+
+    <!--Holds the models for paper, rock, scissors-->
+    <div id="rockModel" class="model">
+        <div class="model-content">
+            <span class = "close" onclick = "closeModel('rock')">&times;</span> <!--when you click the small x, image will close-->
+            <img src="Images/rock.jpg" alt="Rock">
+        </div>
+    </div>
+
+    <div id="paperModel" class="model">
+        <div class="model-content">
+            <span class="close" onclick="closeModel('paper')">&times;</span> <!--when you click the small x, image will close-->
+            <img src="Images/paper.jpg" alt="Paper">
+        </div>
+    </div>
+
+    <div id="scissorsModel" class="model">
+        <div class="model-content">
+            <span class="close" onclick="closeModel('scissors')">&times;</span> <!--when you click the small x, image will close-->
+            <img src="Images/scissors.jpg" alt="Scissors">
+        </div>
+    </div>
+
+    <!--Holds the model for computer choice-->
+    <div id="computerChoiceModel" class="model">
+        <div class="model-content">
+            <span class="close" onclick="closeModel('computerChoice')">&times;</span>
+            <img id="computerChoiceImage" src="Images/computerChoiceImage.jpg" alt="Computer's Choice">
+        </div>
+    </div>
+</body>
+</html>
